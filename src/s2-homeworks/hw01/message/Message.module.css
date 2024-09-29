@@ -1,11 +1,11 @@
 .message {
-
     display: flex;
     justify-content: flex-end;
+    flex-direction: column;
 }
 
 .imageAndText {
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -16,13 +16,7 @@
     border-radius: 50%;
     display: flex;
     margin-left: 10px;
-
-}
-
-photoTime {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    align-items: end;
 }
 
 .text {
@@ -60,4 +54,7 @@ photoTime {
     font-size: 10px;
     font-weight: 600;
     line-height: 12px;
+    display: flex;
+    justify-content: end;
+    padding-right: 23px;
 }

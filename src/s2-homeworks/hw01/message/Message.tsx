@@ -12,14 +12,10 @@ const Message = (props: MessagePropsType) => {
     return (
         <div id={'hw1-message-' + props.message.id} className={s.message}>
             <div className={s.imageAndText}>
-                <div className={s.photoTime}>
-                    <img
-                        id={'hw1-avatar-' + props.message.id}
-                        src={'https://cs13.pikabu.ru/post_img/big/2023/02/13/8/1676295806122712757.png'}
-                        alt={'avatar'}/>
-                        {'10:31'}
-                </div>
-
+                <img
+                    id={'hw1-avatar-' + props.message.id}
+                    src={'https://cs13.pikabu.ru/post_img/big/2023/02/13/8/1676295806122712757.png'}
+                    alt={'avatar'}/>
                 <div className={s.text}>
 
                     <div id={'hw1-name-' + props.message.id} className={s.name}>
@@ -35,7 +31,7 @@ const Message = (props: MessagePropsType) => {
             </div>
 
             <div id={'hw1-time-' + props.message.id} className={s.time}>
-
+                {'10:31'}
 
                 {/**/}
             </div>
