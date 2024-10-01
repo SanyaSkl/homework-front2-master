@@ -4,36 +4,38 @@ import {AffairType, FilterType} from '../HW2'
 import s from './Affairs.module.css'
 
 type AffairsPropsType = {
-    data: any // need to fix any
-    setFilter: any
-    deleteAffairCallback: any
+    data: AffairType[] // need to fix any
+    setFilter: (filter: FilterType) => void
+    deleteAffairCallback: (_id: number) => void
     filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
+    const {data, setFilter, deleteAffairCallback, filter} = props;
+
     const setAll = () => {
-        // need to fix
+        setFilter('all')// need to fix
     }
     const setHigh = () => {
-        // need to fix
+        setFilter('high')// need to fix
     }
     const setMiddle = () => {
-        // need to fix
+        setFilter('middle')// need to fix
     }
     const setLow = () => {
-        // need to fix
+        setFilter('low')// need to fix
     }
 
-    const cnAll = s.button + ' ' + s.all + (props.filter === 'all' ? ' ' + s.active : '')
-    const cnHigh = s.button + ' ' + s.high + (props.filter === 'high' ? ' ' + s.active : '')
-    const cnMiddle = s.button + ' ' + s.middle + (props.filter === 'middle' ? ' ' + s.active : '')
-    const cnLow = s.button + ' ' + s.low + (props.filter === 'low' ? ' ' + s.active : '')
+    const cnAll = s.button + ' ' + s.all + (filter === 'all' ? ' ' + s.active : '')
+    const cnHigh = s.button + ' ' + s.high + (filter === 'high' ? ' ' + s.active : '')
+    const cnMiddle = s.button + ' ' + s.middle + (filter === 'middle' ? ' ' + s.active : '')
+    const cnLow = s.button + ' ' + s.low + (filter === 'low' ? ' ' + s.active : '')
 
-    const mappedAffairs = props.data.map((a: AffairType) => (
+    const mappedAffairs = data.map((a: AffairType) => (
         <Affair
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
             affair={a}
-            deleteAffairCallback={props.deleteAffairCallback}
+            deleteAffairCallback={deleteAffairCallback}
         />
     ))
 
