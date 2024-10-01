@@ -20,10 +20,10 @@
 }
 
 .friendText {
-    background: #0066CC;
+    background: #F5F7FB;
     border-radius: 5px;
     padding: 10px 10px 5px 10px;
-    color: #FFFFFF;
+    color: #000000;
     position: relative;
 }
 
@@ -33,7 +33,7 @@
     bottom: 0; /* Положение треугольника снизу */
     left: -9px; /* Отступ справа */
     border: 10px solid transparent;
-    border-bottom: 10px solid #0066CC /* Изменяем сторону треугольника */
+    border-bottom: 10px solid #F5F7FB /* Изменяем сторону треугольника */
 
 }
 
@@ -43,7 +43,7 @@
     font-weight: 600;
     line-height: 22px;
     display: flex;
-    justify-content: end;
+    justify-content: start;
     padding-right: 5px;
 }
 

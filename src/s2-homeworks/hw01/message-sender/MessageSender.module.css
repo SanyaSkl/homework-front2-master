@@ -1,20 +1,28 @@
 .sendForm {
     display: flex;
-    margin-top: 10px;
+    align-items: end;
+
+    margin: 32px 5px;
 }
 
 .textarea {
     width: 976px;
     height: 40px;
-    top: 432px;
-    left: 70px;
     border-radius: 20px;
-    border-color: black;
-    margin: 30px 15px 0 20px;
+    border-color: transparent;
+    margin: 40px 35px 0 20px;
     resize: none;
-    display: flex;
-    justify-self: start;
+    background: #F5F7FB;
+    padding: 10px 0 0 10px;
+    text-align: left;
+    outline: none;
 }
+
+.textarea:hover {
+    outline: 4px solid #1D21261A;
+
+}
+
 
 .button {
     width: 120px;

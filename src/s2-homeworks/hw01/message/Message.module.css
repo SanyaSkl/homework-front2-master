@@ -5,7 +5,7 @@
 }
 
 .imageAndText {
-    padding: 10px 10px 0 10px;
+    padding: 24px 10px 0 10px;
     display: flex;
     flex-direction: row-reverse;
 }
