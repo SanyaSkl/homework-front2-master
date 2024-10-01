@@ -1,10 +1,11 @@
 .friendMessage {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
 }
 
 .friendImageAndText {
-    padding: 10px;
+    padding: 10px 10px 0 10px;
     display: flex;
     flex-direction: row;
 }
@@ -15,6 +16,7 @@
     border-radius: 50%;
     display: flex;
     margin-right: 10px;
+    margin-top: 15px;
 }
 
 .friendText {
@@ -22,9 +24,16 @@
     border-radius: 5px;
     padding: 10px 10px 5px 10px;
     color: #FFFFFF;
+    position: relative;
 }
 
 .friendText:after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Положение треугольника снизу */
+    left: -9px; /* Отступ справа */
+    border: 10px solid transparent;
+    border-bottom: 10px solid #0066CC /* Изменяем сторону треугольника */
 
 }
 
@@ -52,5 +61,7 @@
     font-weight: 600;
     line-height: 12px;
     display: flex;
-    flex-direction: column;
+    justify-content: start;
+    padding-left: 23px;
+    padding-top: 5px;
 }

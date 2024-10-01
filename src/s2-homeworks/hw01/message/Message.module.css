@@ -16,7 +16,7 @@
     border-radius: 50%;
     display: flex;
     margin-left: 10px;
-    align-items: end;
+    margin-top: 15px;
 }
 
 .text {
@@ -24,11 +24,19 @@
     border-radius: 5px;
     padding: 10px 10px 5px 10px;
     color: #FFFFFF;
+    position: relative;
 }
 
 .text:after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* Положение треугольника снизу */
+    right: -10px; /* Отступ справа */
+    border: 10px solid transparent;
+    border-bottom: 10px solid #0066CC; /* Изменяем сторону треугольника */
 
 }
+
 
 .name {
     font-family: Montserrat, sans-serif;
@@ -46,7 +54,6 @@
     font-weight: 400;
     line-height: 20px;
     text-align: left;
-
 }
 
 .time {
@@ -57,4 +64,5 @@
     display: flex;
     justify-content: end;
     padding-right: 23px;
+    padding-top: 5px;
 }
