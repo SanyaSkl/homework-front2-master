@@ -1,4 +1,6 @@
 .input:focus {
+    outline: none;
+    border: #0059b3 solid 2px;
 }
 
 .input {
