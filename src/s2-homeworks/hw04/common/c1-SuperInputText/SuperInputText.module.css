@@ -4,6 +4,10 @@
 }
 
 .input {
+    border: 2px solid #D1D1D1;
+    border-radius: 5px;
+    Height: 36px;
+    width: 372px;
 }
 
 .inputWrapper {
@@ -13,9 +17,14 @@
 }
 
 .errorInput {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
 }
 
+
 .errorInput:focus {
+    outline: 3px solid #1a22b4;
 }
 
 .error {
