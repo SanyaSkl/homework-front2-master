@@ -1,22 +1,42 @@
 .greetingForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
 }
 
 .inputAndButtonContainer {
+    display: flex;
+    align-items: flex-start;
+
 }
 
 .error {
+    border-radius: 5px;
 }
 
 .input {
+    border: 2px solid #D1D1D1;
+    border-radius: 5px;
+    Height: 36px;
+    width: 372px;
 }
 
 .input:focus {
+    border: 2px solid #D1D1D1;
+    border-radius: 5px;
+    outline: none;
 }
 
 .errorInput {
+    Height: 36px;
+    width: 372px;
+    border: 2px solid red;
+    border-radius: 5px;
 }
 
 .button {
+    margin: 10px;
+    border-radius: 5px;
 }
 
 .button:focus {
@@ -29,6 +49,7 @@
 }
 
 .text {
+    margin: 10px;
 }
 
 .greeting {
