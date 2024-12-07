@@ -1,25 +1,57 @@
 .sidebar {
+
 }
 
 .sidebar.open {
+    position: absolute;
+    width: 317px;
+    height: 720px;
+    background: #87ee02;
 }
 
 .background {
 }
 
 .nav {
+    display: flex;
+    flex-direction: column;
 }
 
 .nav a {
+    color: #000000;
+    font-family: Montserrat, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
 }
 
 .nav a:hover {
+
 }
 
 .nav a.active {
 }
+
 .close {
 }
 
 .close img {
+}
+
+.pre_junior {
+
+}
+
+.juniorLink {
+
+}
+
+.juniorPlusLink {
+
 }
