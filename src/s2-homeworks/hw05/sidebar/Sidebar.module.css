@@ -1,47 +1,69 @@
 .sidebar {
-
+    display: none;
 }
 
 .sidebar.open {
+    display: block;
     position: absolute;
     width: 317px;
     height: 720px;
-    background: #87ee02;
+    box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 10px 40px 0 rgba(29, 33, 38, 0.13);
+    background: rgb(255, 255, 255);
+
 }
 
 .background {
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    background: rgb(0, 0, 0);
+    opacity: 0.3;
 }
 
 .nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 40px;
+
 }
 
 .nav a {
-    color: #000000;
+    color: rgb(0, 0, 0);
     font-family: Montserrat, sans-serif;
     font-size: 22px;
     font-weight: 600;
     line-height: 27px;
-    text-align: left;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
+    text-align: center;
+    margin: 10px 0;
+    text-decoration: none;
+    padding: 10px;
 }
 
 .nav a:hover {
-
+    text-decoration: underline;
+    color: #58ACFF;
 }
 
 .nav a.active {
+    text-decoration: underline;
+    color: #3D6B99;
+
 }
 
 .close {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
 }
 
 .close img {
+    width: 20px;
+    height: 20px;
 }
 
 .pre_junior {
