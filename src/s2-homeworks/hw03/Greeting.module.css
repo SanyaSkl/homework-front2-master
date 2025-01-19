@@ -19,6 +19,7 @@
     border-radius: 5px;
     Height: 36px;
     width: 372px;
+    padding: 10px;
 }
 
 .input:focus {

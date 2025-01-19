@@ -1,5 +1,5 @@
 .button {
-    position: relative;
+    /*position: relative;*/
     overflow: hidden;
     cursor: pointer;
 }
@@ -44,6 +44,7 @@
     font-weight: 600;
     text-align: center;
     border: none;
+    margin-right: 24px;
 }
 
 .red {
