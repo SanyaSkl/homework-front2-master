@@ -1,23 +1,44 @@
 .item {
+
 }
 
 .item:last-of-type {
+
 }
 
 .users {
+    margin-top: 18px;
+    /*width: 606px;*/
+    font-weight: 600;
 }
 
 .buttonsContainer {
+    display: flex;
+    justify-content: end;
+    padding-top: 38px;
 }
 
 .container {
+    width: 606px;
+    display: flex;
+    flex-direction: column;
 }
 
 .thead {
+    height: 36px;
+    background: rgb(229, 229, 229);
 }
 
 .nameCol {
+    font-family: Roboto, serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px;
+
 }
 
 .ageCol {
+    font-family: Roboto, serif;
+    font-size: 14px;
+    font-weight: 600;
 }

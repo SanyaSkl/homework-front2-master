@@ -1,20 +1,25 @@
 .button {
-    /*position: relative;*/
     overflow: hidden;
     cursor: pointer;
+    width: auto;
+    height: auto;
+    padding: 5px 24px 5px 24px;
+    text-align: center;
+    margin-right: 12px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.button:last-of-type {
+    margin: 0;
 }
 
 .disabled {
     background: #004D99;
     color: #002E5C;
     outline: none;
-    width: 132px;
-    height: 30px;
-    border-radius: 3px;
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
     border: none;
 }
 
@@ -22,13 +27,6 @@
     background: white;
     color: #0066CC;
     outline: none;
-    width: 176px;
-    height: 30px;
-    border-radius: 3px;
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
     border: 2px solid #0066CC;
 }
 
@@ -36,39 +34,22 @@
     background: #0066CC;
     color: #FFFFFF;
     outline: none;
-    width: 132px;
-    height: 30px;
-    border-radius: 3px;
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
     border: none;
-    margin-right: 24px;
 }
 
 .red {
     background: #CC1439;
     color: #FFFFFF;
     outline: none;
-    width: 132px;
-    height: 30px;
-    border-radius: 3px;
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
 }
 
 .default:hover {
     outline: 3px solid #1a22b4;
-    width: 176px;
-    background: #0080FF
+    background: #0080FF;
 }
 
 .red:hover {
     outline: 3px solid #1a22b4;
-    width: 176px;
     background: #FF1A47;
 }
 
@@ -91,5 +72,5 @@
 
 .button:disabled {
     color: #212A34;
-    Opacity: 50%
+    Opacity: 50%;
 }
