@@ -38,7 +38,7 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
-                setText(res.data.errorsText)
+                setText(res.data.errorText)
                 setInfo(res.data.info)
             })
             .catch((e) => {
@@ -56,7 +56,7 @@ const HW13 = () => {
                     setCode('Ошибка!')
                     setImage(errorUnknown)
                     setText('Неизвестная ошибка')
-                    setInfo('Проверьте соединение')
+                    setInfo('Error: Network Error')
                 }
             })
             .finally(() => {
