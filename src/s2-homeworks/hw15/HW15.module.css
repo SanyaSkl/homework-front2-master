@@ -1,27 +1,73 @@
-.tech {
-    width: 50vw;
+.tech, .developer {
+    width: 50%;
+    padding: 12px 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
 }
 
-.developer {
-
-}
-
-.techHeader {
-    width: 50vw;
-}
-
-.developerHeader {
-
+.techHeader, .developerHeader  {
+    width: 50%;
+    padding: 12px 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(156, 153, 153, 0.53);
 }
 
 .row {
     display: flex;
+    border-bottom: 1px solid #e9ecef;
 }
 
 .rowHeader {
     display: flex;
+    border-bottom: 2px solid #dee2e6;
+    margin-bottom: 4px;
 }
 
-.loading {
+.contentContainer {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 400px;
+    max-width: 606px;   /* Максимальная ширина из Figma */
+    width: 100%;        /* На узких экранах занимает всю ширину */
+}
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);  /* Полупрозрачный белый */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    border-radius: 8px;  /* Опционально, для красоты */
+}
+
+
+.spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid #e2e8f0;
+    border-top: 4px solid #0066cc;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }

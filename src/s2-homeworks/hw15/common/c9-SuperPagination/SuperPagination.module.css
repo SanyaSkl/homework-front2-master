@@ -1,11 +1,21 @@
 .pagination {
     display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Растягиваем между левым и правым краем */
+    width: 497px;
+    height: 24px;
+    margin-bottom: 24px;
 }
 
-.text1 {
-
+.text1, .text2 {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: #333;
 }
 
-.text2 {
-
+/* Стили для SuperSelect, чтобы он был размером 39x24 как в Figma */
+.pagination :global(.MuiSelect-root) {
+    width: 39px;
+    height: 24px;
+    font-size: 14px;
 }
